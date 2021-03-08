@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD181CBA25F4982300F07101 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181CB925F4982300F07101 /* ImagesViewController.swift */; };
+		BD181CBC25F4A8BD00F07101 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */; };
+		BD181D0625F4CF3300F07101 /* ImageResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0525F4CF3300F07101 /* ImageResources.swift */; };
+		BD181D0825F4D1F300F07101 /* QueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0725F4D1F300F07101 /* QueryRequest.swift */; };
+		BD181D0B25F4D39600F07101 /* SearchViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0A25F4D39600F07101 /* SearchViewController+Extensions.swift */; };
+		BD181D0D25F5F0B200F07101 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0C25F5F0B200F07101 /* Array+Extensions.swift */; };
+		BD181D0F25F5F4F400F07101 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0E25F5F4F400F07101 /* UserDefaultKeys.swift */; };
+		BD181D1125F5F52E00F07101 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D1025F5F52E00F07101 /* Identifiers.swift */; };
 		BDDF5A7625F39D4700DF179A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A7525F39D4700DF179A /* AppDelegate.swift */; };
-		BDDF5A7825F39D4700DF179A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A7725F39D4700DF179A /* SceneDelegate.swift */; };
-		BDDF5A7A25F39D4700DF179A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A7925F39D4700DF179A /* ViewController.swift */; };
 		BDDF5A7D25F39D4700DF179A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF5A7B25F39D4700DF179A /* Main.storyboard */; };
-		BDDF5A8025F39D4700DF179A /* SkaudAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A7E25F39D4700DF179A /* SkaudAssignment.xcdatamodeld */; };
 		BDDF5A8225F39D4800DF179A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDF5A8125F39D4800DF179A /* Assets.xcassets */; };
 		BDDF5A8525F39D4800DF179A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF5A8325F39D4800DF179A /* LaunchScreen.storyboard */; };
 		BDDF5A9025F39D4900DF179A /* SkaudAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A8F25F39D4900DF179A /* SkaudAssignmentTests.swift */; };
+		BDDF5A9C25F3A1F200DF179A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A9B25F3A1F200DF179A /* SearchViewController.swift */; };
+		BDDF5AA025F3B8A700DF179A /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A9F25F3B8A700DF179A /* HttpUtility.swift */; };
+		BDDF5AA125F3B8A700DF179A /* HttpUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A9F25F3B8A700DF179A /* HttpUtility.swift */; };
+		BDDF5AA425F3B96500DF179A /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5AA325F3B96500DF179A /* Endpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,18 +37,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD181CB925F4982300F07101 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
+		BD181D0525F4CF3300F07101 /* ImageResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResources.swift; sourceTree = "<group>"; };
+		BD181D0725F4D1F300F07101 /* QueryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryRequest.swift; sourceTree = "<group>"; };
+		BD181D0A25F4D39600F07101 /* SearchViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchViewController+Extensions.swift"; sourceTree = "<group>"; };
+		BD181D0C25F5F0B200F07101 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		BD181D0E25F5F4F400F07101 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		BD181D1025F5F52E00F07101 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		BDDF5A7225F39D4700DF179A /* SkaudAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkaudAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF5A7525F39D4700DF179A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDDF5A7725F39D4700DF179A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDDF5A7925F39D4700DF179A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BDDF5A7C25F39D4700DF179A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BDDF5A7F25F39D4700DF179A /* SkaudAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkaudAssignment.xcdatamodel; sourceTree = "<group>"; };
 		BDDF5A8125F39D4800DF179A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDDF5A8425F39D4800DF179A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDDF5A8625F39D4800DF179A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDDF5A8B25F39D4900DF179A /* SkaudAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkaudAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF5A8F25F39D4900DF179A /* SkaudAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaudAssignmentTests.swift; sourceTree = "<group>"; };
 		BDDF5A9125F39D4900DF179A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDF5A9B25F3A1F200DF179A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BDDF5A9F25F3B8A700DF179A /* HttpUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
+		BDDF5AA325F3B96500DF179A /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD181D0425F4CF1F00F07101 /* ImageResourceAsseccor */ = {
+			isa = PBXGroup;
+			children = (
+				BD181D0525F4CF3300F07101 /* ImageResources.swift */,
+			);
+			path = ImageResourceAsseccor;
+			sourceTree = "<group>";
+		};
+		BD181D0925F4D37B00F07101 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD181D0A25F4D39600F07101 /* SearchViewController+Extensions.swift */,
+				BD181D0C25F5F0B200F07101 /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BDDF5A6925F39D4700DF179A = {
 			isa = PBXGroup;
 			children = (
@@ -81,14 +115,16 @@
 		BDDF5A7425F39D4700DF179A /* SkaudAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				BD181D0425F4CF1F00F07101 /* ImageResourceAsseccor */,
+				BDDF5AA225F3B94800DF179A /* Constant */,
+				BDDF5A9E25F3B88000DF179A /* HttpUtility */,
+				BDDF5A9D25F3A20600DF179A /* Model */,
+				BDDF5A9A25F3A1C200DF179A /* Controller */,
 				BDDF5A7525F39D4700DF179A /* AppDelegate.swift */,
-				BDDF5A7725F39D4700DF179A /* SceneDelegate.swift */,
-				BDDF5A7925F39D4700DF179A /* ViewController.swift */,
 				BDDF5A7B25F39D4700DF179A /* Main.storyboard */,
 				BDDF5A8125F39D4800DF179A /* Assets.xcassets */,
 				BDDF5A8325F39D4800DF179A /* LaunchScreen.storyboard */,
 				BDDF5A8625F39D4800DF179A /* Info.plist */,
-				BDDF5A7E25F39D4700DF179A /* SkaudAssignment.xcdatamodeld */,
 			);
 			path = SkaudAssignment;
 			sourceTree = "<group>";
@@ -100,6 +136,43 @@
 				BDDF5A9125F39D4900DF179A /* Info.plist */,
 			);
 			path = SkaudAssignmentTests;
+			sourceTree = "<group>";
+		};
+		BDDF5A9A25F3A1C200DF179A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD181D0925F4D37B00F07101 /* Extensions */,
+				BDDF5A9B25F3A1F200DF179A /* SearchViewController.swift */,
+				BD181CB925F4982300F07101 /* ImagesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BDDF5A9D25F3A20600DF179A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */,
+				BD181D0725F4D1F300F07101 /* QueryRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BDDF5A9E25F3B88000DF179A /* HttpUtility */ = {
+			isa = PBXGroup;
+			children = (
+				BDDF5A9F25F3B8A700DF179A /* HttpUtility.swift */,
+			);
+			path = HttpUtility;
+			sourceTree = "<group>";
+		};
+		BDDF5AA225F3B94800DF179A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				BDDF5AA325F3B96500DF179A /* Endpoints.swift */,
+				BD181D0E25F5F4F400F07101 /* UserDefaultKeys.swift */,
+				BD181D1025F5F52E00F07101 /* Identifiers.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +276,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDDF5A7A25F39D4700DF179A /* ViewController.swift in Sources */,
-				BDDF5A8025F39D4700DF179A /* SkaudAssignment.xcdatamodeld in Sources */,
+				BD181D0825F4D1F300F07101 /* QueryRequest.swift in Sources */,
+				BD181D0D25F5F0B200F07101 /* Array+Extensions.swift in Sources */,
+				BD181CBA25F4982300F07101 /* ImagesViewController.swift in Sources */,
+				BDDF5AA025F3B8A700DF179A /* HttpUtility.swift in Sources */,
+				BDDF5A9C25F3A1F200DF179A /* SearchViewController.swift in Sources */,
+				BDDF5AA425F3B96500DF179A /* Endpoints.swift in Sources */,
 				BDDF5A7625F39D4700DF179A /* AppDelegate.swift in Sources */,
-				BDDF5A7825F39D4700DF179A /* SceneDelegate.swift in Sources */,
+				BD181D0B25F4D39600F07101 /* SearchViewController+Extensions.swift in Sources */,
+				BD181D0F25F5F4F400F07101 /* UserDefaultKeys.swift in Sources */,
+				BD181CBC25F4A8BD00F07101 /* ImageResponse.swift in Sources */,
+				BD181D1125F5F52E00F07101 /* Identifiers.swift in Sources */,
+				BD181D0625F4CF3300F07101 /* ImageResources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDF5AA125F3B8A700DF179A /* HttpUtility.swift in Sources */,
 				BDDF5A9025F39D4900DF179A /* SkaudAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,19 +551,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BDDF5A7E25F39D4700DF179A /* SkaudAssignment.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BDDF5A7F25F39D4700DF179A /* SkaudAssignment.xcdatamodel */,
-			);
-			currentVersion = BDDF5A7F25F39D4700DF179A /* SkaudAssignment.xcdatamodel */;
-			path = SkaudAssignment.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BDDF5A6A25F39D4700DF179A /* Project object */;
 }
