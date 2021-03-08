@@ -12,10 +12,20 @@ import Foundation
 struct ImageResources {
     private let httpUtility = HttpUtility()
    
-    func getImages(request: QueryRequest, keyword: String, completionHandler: @escaping(_ result: ImageResponse?) -> Void)
-    {
+    func getImages(request: QueryRequest, keyword: String, completionHandler: @escaping(_ result: ImageResponse?) -> Void) {
         let encodedString = createPercentageEncodedString(from: request.q!)
         let imageEndpoint = URL(string: "\(Endpoints.baseUrl)?key=\(Endpoints.apiKey)&q=\(encodedString!)&image_type=photo")!
+    
+        httpUtility.getApiData(requestUrl: imageEndpoint, resultType: ImageResponse.self) { (response) in
+            
+            _ = completionHandler(response)
+
+        }
+    }
+    
+    func getImagesWithPages(request: QueryRequest, keyword: String, page: Int, completionHandler: @escaping(_ result: ImageResponse?) -> Void) {
+        let encodedString = createPercentageEncodedString(from: request.q!)
+        let imageEndpoint = URL(string: "\(Endpoints.baseUrl)?key=\(Endpoints.apiKey)&q=\(encodedString!)&image_type=photo&previewWidth=150&previewHeight=140")!
     
         httpUtility.getApiData(requestUrl: imageEndpoint, resultType: ImageResponse.self) { (response) in
             

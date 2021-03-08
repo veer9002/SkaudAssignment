@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05E1A932B8881F5C7120DAB2 /* Pods_SkaudAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C477D3683E274DC25C656D /* Pods_SkaudAssignmentTests.framework */; };
+		9569D9EF80CFAD55039C18ED /* Pods_SkaudAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D546243F5536475A7515CF3B /* Pods_SkaudAssignment.framework */; };
 		BD181CBA25F4982300F07101 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181CB925F4982300F07101 /* ImagesViewController.swift */; };
 		BD181CBC25F4A8BD00F07101 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */; };
 		BD181D0625F4CF3300F07101 /* ImageResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0525F4CF3300F07101 /* ImageResources.swift */; };
@@ -15,6 +17,8 @@
 		BD181D0D25F5F0B200F07101 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0C25F5F0B200F07101 /* Array+Extensions.swift */; };
 		BD181D0F25F5F4F400F07101 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0E25F5F4F400F07101 /* UserDefaultKeys.swift */; };
 		BD181D1125F5F52E00F07101 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D1025F5F52E00F07101 /* Identifiers.swift */; };
+		BD181D1325F6139D00F07101 /* ImagesViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D1225F6139D00F07101 /* ImagesViewController+Extensions.swift */; };
+		BD181D1625F616F700F07101 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D1525F616F700F07101 /* ImageCell.swift */; };
 		BDDF5A7625F39D4700DF179A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A7525F39D4700DF179A /* AppDelegate.swift */; };
 		BDDF5A7D25F39D4700DF179A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF5A7B25F39D4700DF179A /* Main.storyboard */; };
 		BDDF5A8225F39D4800DF179A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDF5A8125F39D4800DF179A /* Assets.xcassets */; };
@@ -37,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27A286B67B11340B21AE5DF3 /* Pods-SkaudAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaudAssignment.debug.xcconfig"; path = "Target Support Files/Pods-SkaudAssignment/Pods-SkaudAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		8BB2C5A533AD4B91AC02F639 /* Pods-SkaudAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaudAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-SkaudAssignmentTests/Pods-SkaudAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD181CB925F4982300F07101 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 		BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
 		BD181D0525F4CF3300F07101 /* ImageResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResources.swift; sourceTree = "<group>"; };
@@ -45,6 +51,8 @@
 		BD181D0C25F5F0B200F07101 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		BD181D0E25F5F4F400F07101 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		BD181D1025F5F52E00F07101 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		BD181D1225F6139D00F07101 /* ImagesViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagesViewController+Extensions.swift"; sourceTree = "<group>"; };
+		BD181D1525F616F700F07101 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		BDDF5A7225F39D4700DF179A /* SkaudAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkaudAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF5A7525F39D4700DF179A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF5A7C25F39D4700DF179A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +65,10 @@
 		BDDF5A9B25F3A1F200DF179A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BDDF5A9F25F3B8A700DF179A /* HttpUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtility.swift; sourceTree = "<group>"; };
 		BDDF5AA325F3B96500DF179A /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		C1C477D3683E274DC25C656D /* Pods_SkaudAssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkaudAssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0082F7360813D71AF5EC751 /* Pods-SkaudAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaudAssignment.release.xcconfig"; path = "Target Support Files/Pods-SkaudAssignment/Pods-SkaudAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		D546243F5536475A7515CF3B /* Pods_SkaudAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkaudAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A94405EF31A96287A1A2DD /* Pods-SkaudAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaudAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-SkaudAssignmentTests/Pods-SkaudAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9569D9EF80CFAD55039C18ED /* Pods_SkaudAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,12 +84,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05E1A932B8881F5C7120DAB2 /* Pods_SkaudAssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8F714B7F338CAA538DDA2CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27A286B67B11340B21AE5DF3 /* Pods-SkaudAssignment.debug.xcconfig */,
+				D0082F7360813D71AF5EC751 /* Pods-SkaudAssignment.release.xcconfig */,
+				8BB2C5A533AD4B91AC02F639 /* Pods-SkaudAssignmentTests.debug.xcconfig */,
+				F9A94405EF31A96287A1A2DD /* Pods-SkaudAssignmentTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B951B673A5B8AF6689347ECD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D546243F5536475A7515CF3B /* Pods_SkaudAssignment.framework */,
+				C1C477D3683E274DC25C656D /* Pods_SkaudAssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BD181D0425F4CF1F00F07101 /* ImageResourceAsseccor */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,9 +124,18 @@
 			isa = PBXGroup;
 			children = (
 				BD181D0A25F4D39600F07101 /* SearchViewController+Extensions.swift */,
+				BD181D1225F6139D00F07101 /* ImagesViewController+Extensions.swift */,
 				BD181D0C25F5F0B200F07101 /* Array+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD181D1425F616BB00F07101 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD181D1525F616F700F07101 /* ImageCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BDDF5A6925F39D4700DF179A = {
@@ -100,6 +144,8 @@
 				BDDF5A7425F39D4700DF179A /* SkaudAssignment */,
 				BDDF5A8E25F39D4900DF179A /* SkaudAssignmentTests */,
 				BDDF5A7325F39D4700DF179A /* Products */,
+				A8F714B7F338CAA538DDA2CE /* Pods */,
+				B951B673A5B8AF6689347ECD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +165,7 @@
 				BDDF5AA225F3B94800DF179A /* Constant */,
 				BDDF5A9E25F3B88000DF179A /* HttpUtility */,
 				BDDF5A9D25F3A20600DF179A /* Model */,
+				BD181D1425F616BB00F07101 /* View */,
 				BDDF5A9A25F3A1C200DF179A /* Controller */,
 				BDDF5A7525F39D4700DF179A /* AppDelegate.swift */,
 				BDDF5A7B25F39D4700DF179A /* Main.storyboard */,
@@ -182,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDF5A9425F39D4900DF179A /* Build configuration list for PBXNativeTarget "SkaudAssignment" */;
 			buildPhases = (
+				B554B19A306D198344E24A6D /* [CP] Check Pods Manifest.lock */,
 				BDDF5A6E25F39D4700DF179A /* Sources */,
 				BDDF5A6F25F39D4700DF179A /* Frameworks */,
 				BDDF5A7025F39D4700DF179A /* Resources */,
+				16CE901BF7021B6D72CAF4B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDDF5A9725F39D4900DF179A /* Build configuration list for PBXNativeTarget "SkaudAssignmentTests" */;
 			buildPhases = (
+				E9930FCE0E2208D18E08327A /* [CP] Check Pods Manifest.lock */,
 				BDDF5A8725F39D4900DF179A /* Sources */,
 				BDDF5A8825F39D4900DF179A /* Frameworks */,
 				BDDF5A8925F39D4900DF179A /* Resources */,
@@ -271,6 +321,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16CE901BF7021B6D72CAF4B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkaudAssignment/Pods-SkaudAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkaudAssignment/Pods-SkaudAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkaudAssignment/Pods-SkaudAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B554B19A306D198344E24A6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkaudAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9930FCE0E2208D18E08327A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkaudAssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BDDF5A6E25F39D4700DF179A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -281,10 +395,12 @@
 				BD181CBA25F4982300F07101 /* ImagesViewController.swift in Sources */,
 				BDDF5AA025F3B8A700DF179A /* HttpUtility.swift in Sources */,
 				BDDF5A9C25F3A1F200DF179A /* SearchViewController.swift in Sources */,
+				BD181D1625F616F700F07101 /* ImageCell.swift in Sources */,
 				BDDF5AA425F3B96500DF179A /* Endpoints.swift in Sources */,
 				BDDF5A7625F39D4700DF179A /* AppDelegate.swift in Sources */,
 				BD181D0B25F4D39600F07101 /* SearchViewController+Extensions.swift in Sources */,
 				BD181D0F25F5F4F400F07101 /* UserDefaultKeys.swift in Sources */,
+				BD181D1325F6139D00F07101 /* ImagesViewController+Extensions.swift in Sources */,
 				BD181CBC25F4A8BD00F07101 /* ImageResponse.swift in Sources */,
 				BD181D1125F5F52E00F07101 /* Identifiers.swift in Sources */,
 				BD181D0625F4CF3300F07101 /* ImageResources.swift in Sources */,
@@ -446,6 +562,7 @@
 		};
 		BDDF5A9525F39D4900DF179A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27A286B67B11340B21AE5DF3 /* Pods-SkaudAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,6 +580,7 @@
 		};
 		BDDF5A9625F39D4900DF179A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0082F7360813D71AF5EC751 /* Pods-SkaudAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -480,6 +598,7 @@
 		};
 		BDDF5A9825F39D4900DF179A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB2C5A533AD4B91AC02F639 /* Pods-SkaudAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -501,6 +620,7 @@
 		};
 		BDDF5A9925F39D4900DF179A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A94405EF31A96287A1A2DD /* Pods-SkaudAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -29,6 +29,6 @@ extension SearchViewController: UITableViewDataSource {
 // MARK: - UITableView delegates
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.navigateToImage(with: arrRecentlySearched[indexPath.row])
     }
 }

@@ -9,6 +9,7 @@
 import Foundation
 
 struct Identifiers {
-    let searchVCId = "SearchViewController"
-    let imagesVCId = "ImagesViewController"
+    static let searchVCId = "SearchViewController"
+    static let imagesVCId = "ImagesViewController"
+    static let imageCell = "ImageCell"
 }

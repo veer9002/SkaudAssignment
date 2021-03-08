@@ -12,11 +12,11 @@ class SearchViewController: UIViewController {
 
     // MARK: - Properties
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var viewSpinner: UIView!
     let userdefaults = UserDefaults.standard
     var arrRecentlySearched = [String]()
     let imageResources: ImageResources = ImageResources()
     let search = UISearchController(searchResultsController: nil)
-    @IBOutlet weak var viewSpinner: UIView!
     
     // MARK: - View Controller life cycle
     override func viewDidLoad() {
@@ -63,18 +63,13 @@ extension SearchViewController: UISearchBarDelegate {
                         for index in 0..<10 {
                             lastTenArray.append(self.arrRecentlySearched[index])
                         }
-                        self.arrRecentlySearched = lastTenArray                        
+                        self.arrRecentlySearched = lastTenArray
                     }
 
                     print("Last 10 search list \(self.arrRecentlySearched.removingDuplicates()) and count is \(self.arrRecentlySearched.count)")
                     self.userdefaults.set(self.arrRecentlySearched.removingDuplicates(), forKey: UserDefaultKeys.lastTenResult)
                     self.hideSpinner()
-                    DispatchQueue.main.async {
-                        if let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ImagesViewController") as? ImagesViewController {
-                            destinationVC.searchKeyword = searchText
-                            self.navigationController?.pushViewController(destinationVC, animated: true)
-                        }
-                    }
+                    self.navigateToImage(with: searchText)
                 }
             }
         }
@@ -96,6 +91,7 @@ extension SearchViewController: UISearchBarDelegate {
     }
 }
 
+// MARK: - Custom methods
 extension SearchViewController {
     func hideSpinner() {
         DispatchQueue.main.async {
@@ -108,6 +104,15 @@ extension SearchViewController {
         DispatchQueue.main.async {
             self.viewSpinner.isHidden = false
             self.tableView.isHidden = true
+        }
+    }
+    
+    func navigateToImage(with keyword: String) {
+        DispatchQueue.main.async {
+            if let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ImagesViewController") as? ImagesViewController {
+                destinationVC.searchKeyword = keyword
+                self.navigationController?.pushViewController(destinationVC, animated: true)
+            }
         }
     }
 }
