@@ -53,7 +53,19 @@ extension SearchViewController: UISearchBarDelegate {
             imageResources.getImages(request: queryRequest, keyword: searchText) { (response) in
                 if response?.total == 0 {
                     // search keyword not found
-                    self.tableView.isHidden = false
+                    self.hideSpinner()
+                    DispatchQueue.main.async {
+                        self.tableView.isHidden = true
+                    }
+                    DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "No results found", message: "Please try different keyword", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+                            self.search.searchBar.text = ""
+                            self.search.searchBar.searchTextField.becomeFirstResponder()
+                            self.tableView.isHidden = false
+                        }))
+                        self.present(alert, animated: true, completion: nil)
+                    }
                 } else {
                     // Navigation to next screen
                     self.arrRecentlySearched.insert(searchText, at: 0)
@@ -109,7 +121,7 @@ extension SearchViewController {
     
     func navigateToImage(with keyword: String) {
         DispatchQueue.main.async {
-            if let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ImagesViewController") as? ImagesViewController {
+            if let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: Identifiers.imagesVCId) as? ImagesViewController {
                 destinationVC.searchKeyword = keyword
                 self.navigationController?.pushViewController(destinationVC, animated: true)
             }

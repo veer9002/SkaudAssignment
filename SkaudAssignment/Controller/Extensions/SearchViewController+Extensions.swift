@@ -12,9 +12,6 @@ import UIKit
 // MARK: - UITableView data source
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if let lastTenSearchedKeywords = userdefaults.object(forKey: UserDefaultKeys.lastTenResult) as? [String] {
-//            return lastTenSearchedKeywords.count
-//        }
         return arrRecentlySearched.count
     }
     

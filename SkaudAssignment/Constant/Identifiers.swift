@@ -11,5 +11,7 @@ import Foundation
 struct Identifiers {
     static let searchVCId = "SearchViewController"
     static let imagesVCId = "ImagesViewController"
+    static let imagePreviewVCId = "ImagePreviewViewController"
     static let imageCell = "ImageCell"
+    static let imagePreviewCell = "ImagePreviewCell"
 }

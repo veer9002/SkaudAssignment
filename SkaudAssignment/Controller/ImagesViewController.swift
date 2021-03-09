@@ -14,25 +14,53 @@ class ImagesViewController: UIViewController {
     @IBOutlet weak var collectonView: UICollectionView!
     var searchKeyword: String?
     let imageResources: ImageResources = ImageResources()
-    var arrImageList = [ImageResponse]()
+    var arrImageList = [Hit]()
+    var isLoading = false
+    var loadingView: ActivityLoaderCV?
+    var pageIndex = 1
     
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // condition is already checked in parent view controller about empty
         self.navigationItem.title = searchKeyword
+        let loadingReusableNib = UINib(nibName: "ActivityLoaderCV", bundle: nil)
+        collectonView.register(loadingReusableNib, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "ActivityCell")
+        
+        collectonView.alwaysBounceVertical = true
         getImagesByKeyword(page: 1)
     }
     
     // MARK: API Call
     func getImagesByKeyword(page: Int) {
         let queryRequest = QueryRequest(q: searchKeyword)
-        imageResources.getImagesWithPages(request: queryRequest, keyword: searchKeyword!, page: 1) { (response) in
-            self.arrImageList.append(response!)
-            DispatchQueue.main.async {
-                self.collectonView.reloadData()
+        imageResources.getImagesWithPages(request: queryRequest, keyword: searchKeyword!, page: pageIndex) { (response) in
+            if response!.total! > 0 {
+                for index in 0..<(response?.hits)!.count {
+                    self.arrImageList.append((response?.hits![index])!)
+                }
+                DispatchQueue.main.async {
+                    self.collectonView.reloadData()
+                }
             }
-            print(self.arrImageList.count)
+            self.isLoading = false
+        }
+    }
+    
+    func loadMoreData() {
+        if !self.isLoading {
+            self.isLoading = true
+            DispatchQueue.global().async {
+                // Fake background loading task for 2 seconds
+                sleep(2)
+                // Download more data here
+                self.pageIndex += 1
+                self.getImagesByKeyword(page: self.pageIndex)
+
+                DispatchQueue.main.async {
+                    self.collectonView.reloadData()
+                }
+            }
         }
     }
 

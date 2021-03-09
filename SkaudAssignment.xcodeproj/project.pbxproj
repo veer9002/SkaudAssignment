@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		05E1A932B8881F5C7120DAB2 /* Pods_SkaudAssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C477D3683E274DC25C656D /* Pods_SkaudAssignmentTests.framework */; };
 		9569D9EF80CFAD55039C18ED /* Pods_SkaudAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D546243F5536475A7515CF3B /* Pods_SkaudAssignment.framework */; };
+		BD110BAD25F752F700FA977B /* ActivityLoaderCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD110BAB25F752F700FA977B /* ActivityLoaderCV.xib */; };
+		BD110BAE25F752F700FA977B /* ActivityLoaderCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD110BAC25F752F700FA977B /* ActivityLoaderCV.swift */; };
 		BD181CBA25F4982300F07101 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181CB925F4982300F07101 /* ImagesViewController.swift */; };
 		BD181CBC25F4A8BD00F07101 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */; };
 		BD181D0625F4CF3300F07101 /* ImageResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0525F4CF3300F07101 /* ImageResources.swift */; };
@@ -19,6 +21,9 @@
 		BD181D1125F5F52E00F07101 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D1025F5F52E00F07101 /* Identifiers.swift */; };
 		BD181D1325F6139D00F07101 /* ImagesViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D1225F6139D00F07101 /* ImagesViewController+Extensions.swift */; };
 		BD181D1625F616F700F07101 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D1525F616F700F07101 /* ImageCell.swift */; };
+		BD181D1D25F63BD800F07101 /* ImagePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D1C25F63BD800F07101 /* ImagePreviewViewController.swift */; };
+		BD181D1F25F643D400F07101 /* ImagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D1E25F643D400F07101 /* ImagePreviewCell.swift */; };
+		BD181D2125F646B500F07101 /* QueryRequestById.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D2025F646B500F07101 /* QueryRequestById.swift */; };
 		BDDF5A7625F39D4700DF179A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF5A7525F39D4700DF179A /* AppDelegate.swift */; };
 		BDDF5A7D25F39D4700DF179A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF5A7B25F39D4700DF179A /* Main.storyboard */; };
 		BDDF5A8225F39D4800DF179A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDF5A8125F39D4800DF179A /* Assets.xcassets */; };
@@ -43,6 +48,8 @@
 /* Begin PBXFileReference section */
 		27A286B67B11340B21AE5DF3 /* Pods-SkaudAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaudAssignment.debug.xcconfig"; path = "Target Support Files/Pods-SkaudAssignment/Pods-SkaudAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		8BB2C5A533AD4B91AC02F639 /* Pods-SkaudAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaudAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-SkaudAssignmentTests/Pods-SkaudAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD110BAB25F752F700FA977B /* ActivityLoaderCV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityLoaderCV.xib; sourceTree = "<group>"; };
+		BD110BAC25F752F700FA977B /* ActivityLoaderCV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLoaderCV.swift; sourceTree = "<group>"; };
 		BD181CB925F4982300F07101 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 		BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
 		BD181D0525F4CF3300F07101 /* ImageResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResources.swift; sourceTree = "<group>"; };
@@ -53,6 +60,9 @@
 		BD181D1025F5F52E00F07101 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 		BD181D1225F6139D00F07101 /* ImagesViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagesViewController+Extensions.swift"; sourceTree = "<group>"; };
 		BD181D1525F616F700F07101 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		BD181D1C25F63BD800F07101 /* ImagePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewViewController.swift; sourceTree = "<group>"; };
+		BD181D1E25F643D400F07101 /* ImagePreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewCell.swift; sourceTree = "<group>"; };
+		BD181D2025F646B500F07101 /* QueryRequestById.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryRequestById.swift; sourceTree = "<group>"; };
 		BDDF5A7225F39D4700DF179A /* SkaudAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkaudAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF5A7525F39D4700DF179A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF5A7C25F39D4700DF179A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,7 +109,6 @@
 				8BB2C5A533AD4B91AC02F639 /* Pods-SkaudAssignmentTests.debug.xcconfig */,
 				F9A94405EF31A96287A1A2DD /* Pods-SkaudAssignmentTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -133,7 +142,10 @@
 		BD181D1425F616BB00F07101 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BD110BAC25F752F700FA977B /* ActivityLoaderCV.swift */,
+				BD110BAB25F752F700FA977B /* ActivityLoaderCV.xib */,
 				BD181D1525F616F700F07101 /* ImageCell.swift */,
+				BD181D1E25F643D400F07101 /* ImagePreviewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,6 +203,7 @@
 				BD181D0925F4D37B00F07101 /* Extensions */,
 				BDDF5A9B25F3A1F200DF179A /* SearchViewController.swift */,
 				BD181CB925F4982300F07101 /* ImagesViewController.swift */,
+				BD181D1C25F63BD800F07101 /* ImagePreviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,6 +213,7 @@
 			children = (
 				BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */,
 				BD181D0725F4D1F300F07101 /* QueryRequest.swift */,
+				BD181D2025F646B500F07101 /* QueryRequestById.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +322,7 @@
 			files = (
 				BDDF5A8525F39D4800DF179A /* LaunchScreen.storyboard in Resources */,
 				BDDF5A8225F39D4800DF179A /* Assets.xcassets in Resources */,
+				BD110BAD25F752F700FA977B /* ActivityLoaderCV.xib in Resources */,
 				BDDF5A7D25F39D4700DF179A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,7 +409,9 @@
 				BD181D0D25F5F0B200F07101 /* Array+Extensions.swift in Sources */,
 				BD181CBA25F4982300F07101 /* ImagesViewController.swift in Sources */,
 				BDDF5AA025F3B8A700DF179A /* HttpUtility.swift in Sources */,
+				BD181D1D25F63BD800F07101 /* ImagePreviewViewController.swift in Sources */,
 				BDDF5A9C25F3A1F200DF179A /* SearchViewController.swift in Sources */,
+				BD181D1F25F643D400F07101 /* ImagePreviewCell.swift in Sources */,
 				BD181D1625F616F700F07101 /* ImageCell.swift in Sources */,
 				BDDF5AA425F3B96500DF179A /* Endpoints.swift in Sources */,
 				BDDF5A7625F39D4700DF179A /* AppDelegate.swift in Sources */,
@@ -402,7 +419,9 @@
 				BD181D0F25F5F4F400F07101 /* UserDefaultKeys.swift in Sources */,
 				BD181D1325F6139D00F07101 /* ImagesViewController+Extensions.swift in Sources */,
 				BD181CBC25F4A8BD00F07101 /* ImageResponse.swift in Sources */,
+				BD110BAE25F752F700FA977B /* ActivityLoaderCV.swift in Sources */,
 				BD181D1125F5F52E00F07101 /* Identifiers.swift in Sources */,
+				BD181D2125F646B500F07101 /* QueryRequestById.swift in Sources */,
 				BD181D0625F4CF3300F07101 /* ImageResources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
