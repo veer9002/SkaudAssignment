@@ -29,3 +29,31 @@ extension SearchViewController: UITableViewDelegate {
         self.navigateToImage(with: arrRecentlySearched[indexPath.row])
     }
 }
+
+
+// MARK: - Custom methods
+extension SearchViewController {
+    func hideSpinner() {
+        DispatchQueue.main.async {
+            self.viewSpinner.isHidden = true
+            self.tableView.isHidden = false
+        }
+    }
+    
+    func showSpinner() {
+        DispatchQueue.main.async {
+            self.viewSpinner.isHidden = false
+            self.tableView.isHidden = true
+        }
+    }
+    
+    func navigateToImage(with keyword: String) {
+        DispatchQueue.main.async {
+            if let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: Identifiers.imagesVCId) as? ImagesViewController {
+                destinationVC.searchKeyword = keyword
+                self.navigationController?.pushViewController(destinationVC, animated: true)
+            }
+        }
+    }
+}
+

@@ -78,7 +78,6 @@ extension SearchViewController: UISearchBarDelegate {
                         self.arrRecentlySearched = lastTenArray
                     }
 
-                    print("Last 10 search list \(self.arrRecentlySearched.removingDuplicates()) and count is \(self.arrRecentlySearched.count)")
                     self.userdefaults.set(self.arrRecentlySearched.removingDuplicates(), forKey: UserDefaultKeys.lastTenResult)
                     self.hideSpinner()
                     self.navigateToImage(with: searchText)
@@ -102,30 +101,3 @@ extension SearchViewController: UISearchBarDelegate {
         self.tableView.reloadData()
     }
 }
-
-// MARK: - Custom methods
-extension SearchViewController {
-    func hideSpinner() {
-        DispatchQueue.main.async {
-            self.viewSpinner.isHidden = true
-            self.tableView.isHidden = false
-        }
-    }
-    
-    func showSpinner() {
-        DispatchQueue.main.async {
-            self.viewSpinner.isHidden = false
-            self.tableView.isHidden = true
-        }
-    }
-    
-    func navigateToImage(with keyword: String) {
-        DispatchQueue.main.async {
-            if let destinationVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: Identifiers.imagesVCId) as? ImagesViewController {
-                destinationVC.searchKeyword = keyword
-                self.navigationController?.pushViewController(destinationVC, animated: true)
-            }
-        }
-    }
-}
-

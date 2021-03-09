@@ -11,6 +11,7 @@
 		9569D9EF80CFAD55039C18ED /* Pods_SkaudAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D546243F5536475A7515CF3B /* Pods_SkaudAssignment.framework */; };
 		BD110BAD25F752F700FA977B /* ActivityLoaderCV.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD110BAB25F752F700FA977B /* ActivityLoaderCV.xib */; };
 		BD110BAE25F752F700FA977B /* ActivityLoaderCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD110BAC25F752F700FA977B /* ActivityLoaderCV.swift */; };
+		BD110BB025F795BA00FA977B /* ImagePreviewViewController+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD110BAF25F795BA00FA977B /* ImagePreviewViewController+Extenions.swift */; };
 		BD181CBA25F4982300F07101 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181CB925F4982300F07101 /* ImagesViewController.swift */; };
 		BD181CBC25F4A8BD00F07101 /* ImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */; };
 		BD181D0625F4CF3300F07101 /* ImageResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD181D0525F4CF3300F07101 /* ImageResources.swift */; };
@@ -50,6 +51,7 @@
 		8BB2C5A533AD4B91AC02F639 /* Pods-SkaudAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaudAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-SkaudAssignmentTests/Pods-SkaudAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD110BAB25F752F700FA977B /* ActivityLoaderCV.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityLoaderCV.xib; sourceTree = "<group>"; };
 		BD110BAC25F752F700FA977B /* ActivityLoaderCV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityLoaderCV.swift; sourceTree = "<group>"; };
+		BD110BAF25F795BA00FA977B /* ImagePreviewViewController+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagePreviewViewController+Extenions.swift"; sourceTree = "<group>"; };
 		BD181CB925F4982300F07101 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 		BD181CBB25F4A8BD00F07101 /* ImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResponse.swift; sourceTree = "<group>"; };
 		BD181D0525F4CF3300F07101 /* ImageResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResources.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				BD181D0A25F4D39600F07101 /* SearchViewController+Extensions.swift */,
 				BD181D1225F6139D00F07101 /* ImagesViewController+Extensions.swift */,
 				BD181D0C25F5F0B200F07101 /* Array+Extensions.swift */,
+				BD110BAF25F795BA00FA977B /* ImagePreviewViewController+Extenions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD181D0825F4D1F300F07101 /* QueryRequest.swift in Sources */,
+				BD110BB025F795BA00FA977B /* ImagePreviewViewController+Extenions.swift in Sources */,
 				BD181D0D25F5F0B200F07101 /* Array+Extensions.swift in Sources */,
 				BD181CBA25F4982300F07101 /* ImagesViewController.swift in Sources */,
 				BDDF5AA025F3B8A700DF179A /* HttpUtility.swift in Sources */,
